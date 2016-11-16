@@ -138,6 +138,28 @@
 
 	echo "<br>";
 
+	//array sort, reverse, join
+	$the_array = array("asd", "sdas", "dsa", "qwerq");
+	sort($the_array);
+	print join(",",$the_array);
+
+	rsort($the_array);
+	print join("::", $the_array);
+	output:
+	asd,dsa,qwerq,sdas
+	sdas::qwerq::dsa::asd
+
+	//===> array push
+	$apalah = array();
+	array_push($apalah, "hallo");
+	array_push($apalah, "aloha");
+	array_push($apalah, "hai");
+	array_push($apalah, "hoii");
+	array_push($apalah, "yaaa!");
+	print count($apalah);
+	output:
+	5
+
 //show array to json
 	$array_to_json = array(
 		'1' => 'ayam',
